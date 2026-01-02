@@ -70,26 +70,54 @@ ul {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    border-radius: 8px;
+    border-radius: 50%;
     padding: 0;
     width: 44px;
     height: 44px;
     background-color: var(--card-bg);
     color: var(--text-primary);
     cursor: pointer;
-    transition: all 0.2s ease;
+    transition: all 0.3s ease;
     box-shadow: var(--shadow);
+    overflow: visible;
 }
 
-#toggle-mode-btn:hover {
+#toggle-mode-btn i {
+    font-size: 1.5rem;
+    color: var(--text-primary);
+    transition: all 0.3s ease;
+}
+
+/* Day Mode Hover */
+html[data-theme="light"] #toggle-mode-btn:hover {
     background-color: var(--bg-secondary);
     box-shadow: var(--shadow-lg);
-    transform: scale(1.05);
+    transform: translateY(-2px);
 }
 
-#toggle-mode-btn svg {
-    fill: var(--text-primary);
-    transition: fill 0.3s ease;
+/* Night Mode Glow */
+html[data-theme="dark"] #toggle-mode-btn {
+    background-color: var(--bg-secondary);
+    border-color: #fbbf24;
+    box-shadow: 0 0 15px rgba(251, 191, 36, 0.5), inset 0 0 10px rgba(251, 191, 36, 0.2);
+}
+
+html[data-theme="dark"] #toggle-mode-btn i {
+    color: #fbbf24; /* Amber color for light */
+    text-shadow: 0 0 10px rgba(251, 191, 36, 0.8);
+}
+
+/* Shake Animation */
+@keyframes shake {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(15deg); }
+    50% { transform: rotate(-15deg); }
+    75% { transform: rotate(10deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.shake {
+    animation: shake 0.5s ease-in-out;
 }
 
 /* Projects Section */

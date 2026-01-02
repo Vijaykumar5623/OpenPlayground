@@ -1,10 +1,12 @@
 // Theme Toggle Functionality
 const toggleBtn = document.getElementById('toggle-mode-btn');
+const themeIcon = document.getElementById('theme-icon');
 const html = document.documentElement;
 
 // Check for saved theme preference or default to 'light'
 const currentTheme = localStorage.getItem('theme') || 'light';
 html.setAttribute('data-theme', currentTheme);
+updateThemeIcon(currentTheme);
 
 toggleBtn.addEventListener('click', () => {
     const theme = html.getAttribute('data-theme');
@@ -12,7 +14,24 @@ toggleBtn.addEventListener('click', () => {
 
     html.setAttribute('data-theme', newTheme);
     localStorage.setItem('theme', newTheme);
+    updateThemeIcon(newTheme);
+    
+    // Add shake animation
+    toggleBtn.classList.add('shake');
+    setTimeout(() => {
+        toggleBtn.classList.remove('shake');
+    }, 500);
 });
+
+function updateThemeIcon(theme) {
+    if (theme === 'dark') {
+        themeIcon.classList.remove('ri-lightbulb-line');
+        themeIcon.classList.add('ri-lightbulb-fill');
+    } else {
+        themeIcon.classList.remove('ri-lightbulb-fill');
+        themeIcon.classList.add('ri-lightbulb-line');
+    }
+}
 
 // Scroll to Top Button
 const scrollToTopBtn = document.getElementById('scrollToTopBtn');
