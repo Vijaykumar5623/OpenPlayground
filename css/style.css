@@ -1448,6 +1448,12 @@ html[data-theme="dark"] .section-badge {
     color: var(--text-muted);
 }
 
+.empty-icon {
+  font-size: 48px;
+  margin-bottom: 12px;
+  opacity: 0.8;
+}
+
 /* Focus States for Accessibility */
 a:focus-visible,
 button:focus-visible,
