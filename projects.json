@@ -195,6 +195,15 @@
     "tech": ["HTML", "CSS", "JS"],
     "link": "./projects/keyboard-key-detector/index.html",
     "icon": "ri-tools-line",
-    "coverClass": "typing-cover"
+    "coverClass": "keyboard-key-detector-cover"
+  },
+  {
+    "title": "Instagram Bio Generator",
+    "category": "utility",
+    "description": "Generate random Instagram bio suggestions with emojis and vibes.",
+    "tech": ["HTML", "CSS", "JS"],
+    "link": "./projects/Insta_bio_suggesstion/index.html",
+    "icon": "ri-user-line",
+    "coverStyle": "background: linear-gradient(135deg, #f3e8ff 0%, #e9d5ff 100%); color: #7c2d12;"
   }
 ]
