@@ -351,6 +351,149 @@
     <button id="scrollToTopBtn" aria-label="Scroll to top">
         <i class="ri-arrow-up-line"></i>
     </button>
+</div>
+
+<!-- Navbar -->
+<header class="navbar">
+    <div class="nav-container">
+        <a href="#" class="nav-logo">OpenPlayground</a>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="#projects">Projects</a>
+            <a href="#contribute">Contribute</a>
+            <a href="https://github.com/YadavAkhileshh/OpenPlayground" target="_blank">GitHub</a>
+        </nav>
+
+        <button class="nav-toggle" id="navToggle">
+            <i class="ri-menu-3-line"></i>
+        </button>
+    </div>
+</header>
+
+<section id="projects">
+
+    <!-- Hero -->
+    <div class="projects-heading">
+        <p>OpenPlayground</p>
+        <h3><span>Build</span>, Share & Explore</h3>
+        <p class="tagline">
+            A community-driven platform where developers showcase their creativity through interactive web projects
+        </p>
+
+        <div class="btn-container">
+            <a href="https://github.com/YadavAkhileshh/OpenPlayground" target="_blank" class="source-code-btn">
+                View on GitHub
+            </a>
+            <a href="#contribute" class="contribute-btn">
+                Contribute
+            </a>
+        </div>
+    </div>
+
+    <!-- Search + Sort -->
+    <div class="search-sort-wrapper">
+        <div class="search-container">
+            <input type="text" id="project-search" placeholder="Search projects..." />
+        </div>
+
+        <div class="sort-container">
+            <select id="project-sort">
+                <option value="default">Default</option>
+                <option value="az">A → Z</option>
+                <option value="za">Z → A</option>
+                <option value="newest">Newest Added</option>
+                <option value="oldest">Oldest Added</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Category Filter -->
+    <div class="category-filter">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="action">Action</button>
+        <button class="filter-btn" data-filter="strategy">Strategy</button>
+        <button class="filter-btn" data-filter="puzzle">Puzzle</button>
+        <button class="filter-btn" data-filter="utility">Utility</button>
+    </div>
+
+    <!-- Projects Grid -->
+    <div class="projects-container">
+      <!-- Product Listing Page -->
+<a href="./projects/Product_Listing_Page/index.html"
+   class="card"
+   data-category="utility">
+
+  <div class="card-cover product-cover"
+       style="background:#fef3c7;display:flex;align-items:center;justify-content:center">
+    <i class="ri-shopping-bag-3-line"></i>
+  </div>
+
+  <div class="card-content">
+    <div class="card-header-flex">
+      <h3 class="card-heading">Product Listing Page</h3>
+      <span class="category-tag">Utility</span>
+    </div>
+
+    <p class="card-description">
+      A real-world product listing interface with search, filter, and sorting
+      features to explore items in a clean, responsive layout.
+    </p>
+
+    <div class="card-tech">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+    </div>
+  </div>
+</a>
+
+
+        <!-- Color Palette Generator -->
+        <a href="./projects/color-palette-generator/index.html" class="card" data-category="utility">
+            <div class="card-cover palette-cover"><i class="ri-palette-line"></i></div>
+            <div class="card-content">
+                <div class="card-header-flex">
+                    <h3 class="card-heading">Color Palette Generator</h3>
+                    <span class="category-tag">Utility</span>
+                </div>
+                <p class="card-description">Generate beautiful random color palettes.</p>
+                <div class="card-tech"><span>HTML</span><span>CSS</span><span>JS</span></div>
+            </div>
+        </a>
+
+        <!-- Infinite Runner -->
+        <a href="./projects/InfiniteParallaxRunner/index.html" class="card" data-category="action">
+            <div class="card-cover runner-cover"><i class="ri-gamepad-line"></i></div>
+            <div class="card-content">
+                <div class="card-header-flex">
+                    <h3 class="card-heading">Infinite Runner</h3>
+                    <span class="category-tag">Action</span>
+                </div>
+                <p class="card-description">Procedural neon runner with parallax.</p>
+                <div class="card-tech"><span>HTML</span><span>Canvas</span><span>JS</span></div>
+            </div>
+        </a>
+
+        <!-- Calculator -->
+        <a href="./projects/calculator/index.html" class="card" data-category="utility">
+            <div class="card-cover calculator-cover"><i class="ri-calculator-line"></i></div>
+            <div class="card-content">
+                <div class="card-header-flex">
+                    <h3 class="card-heading">Calculator</h3>
+                    <span class="category-tag">Utility</span>
+                </div>
+                <p class="card-description">Basic arithmetic calculator.</p>
+                <div class="card-tech"><span>HTML</span><span>CSS</span><span>JS</span></div>
+            </div>
+        </a>
+
+        <!-- Quiz Game -->
+        <a href="./projects/quiz-game/index.html" class="card" data-category="puzzle">
+            <div class="card-cover quiz-cover"><i class="ri-question-line"></i></div>
+            <div class="card-content">
+                <div class="card-header-flex">
+                    <h3 class="card-heading">Quiz Game</h3>
+                    <span class="category-tag">Puzzle</span>
 
     <!-- Scripts -->
     <script src="./js/components.js"></script>
