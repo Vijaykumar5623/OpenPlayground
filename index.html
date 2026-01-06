@@ -5,303 +5,467 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OpenPlayground - Build, Share, Explore</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="logo.jpg" type="image/x-icon">
+    <link rel="icon" href="logo.jpg" type="image/png">
+    <meta name="description"
+        content="A community-driven platform where developers showcase their creativity through interactive web projects">
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Preload critical components -->
+    <link rel="preload" href="./components/header.html" as="fetch" crossorigin>
+    <link rel="preload" href="./components/hero.html" as="fetch" crossorigin>
 </head>
 
 <body>
-    <!-- Theme Toggle -->
-    <div class="icon">
-        <button id="toggle-mode-btn" aria-label="Toggle theme">
-            <i class="ri-lightbulb-line" id="theme-icon"></i>
-        </button>
-    </div>
+    <!-- Header Component Placeholder -->
+    <div id="header-placeholder"></div>
 
-    <!-- Main Section -->
-    <section id="projects">
-        <div class="projects-heading">
-            <p>OpenPlayground</p>
-            <h3><span>Build</span>, Share & Explore</h3>
-            <p class="tagline">A community-driven platform where developers showcase their creativity through interactive web projects</p>
-            <div class="btn-container">
-                <a href="https://github.com/YadavAkhileshh/OpenPlayground" target="_blank" rel="noopener noreferrer" class="source-code-btn">
-                    View on GitHub
-                </a>
-                <a href="#contribute" class="contribute-btn">
-                    Contribute
-                </a>
-            </div>
-        </div>
-          <!-- Search Projects -->
-          <div class="search-container">
-                 <input 
-                 type="text" 
-                 id="project-search"
-                 placeholder="Search projects..."
-                 aria-label="Search projects"
-               />
-            </div>
+    <!-- Hero Component Placeholder -->
+    <div id="hero-placeholder"></div>
 
-            <!-- Category Filter -->
-            <div class="category-filter">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="action">Action</button>
-                <button class="filter-btn" data-filter="strategy">Strategy</button>
-                <button class="filter-btn" data-filter="puzzle">Puzzle</button>
-                <button class="filter-btn" data-filter="utility">Utility</button>
-            </div>
+    <!-- Projects Component Placeholder -->
+    <div id="projects-placeholder"></div>
 
-            <div class="projects-container">
-                <!-- Infinite Parallax Runner Project -->
-                <a href="./projects/InfiniteParallaxRunner/index.html" class="card" data-category="action">
-                    <div class="card-cover runner-cover">
-                        <i class="ri-gamepad-line"></i>
-                    </div>
-                    <div class="card-content">
-                        <div class="card-header-flex">
-                            <h3 class="card-heading">Infinite Runner</h3>
-                            <span class="category-tag">Action</span>
-                        </div>
-                        <p class="card-description">Neon-styled procedural runner with smooth parallax and score system.</p>
-                        <div class="card-tech">
-                            <span>HTML</span>
-                            <span>Canvas</span>
-                            <span>JS</span>
-                        </div>
-                    </div>
-                </a>
-                <!-- Calculator Project -->
-                <a href="./projects/calculator/index.html" class="card" data-category="utility">
-                    <div class="card-cover calculator-cover">
-                        <i class="ri-calculator-line"></i>
-                    </div>
-                    <div class="card-content">
-                        <div class="card-header-flex">
-                            <h3 class="card-heading">Calculator</h3>
-                            <span class="category-tag">Utility</span>
-                        </div>
-                        <p class="card-description">Basic arithmetic calculator with keyboard support and clean interface.</p>
-                        <div class="card-tech">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
-                        </div>
-                    </div>
-                </a>
+    <!-- Contribute Component Placeholder -->
+    <div id="contribute-placeholder"></div>
 
-                <!-- Tic Tac Toe Project -->
-                <a href="./projects/tic-tac-toe/index.html" class="card" data-category="strategy">
-                    <div class="card-cover tictactoe-cover">
-                        <i class="ri-grid-line"></i>
-                    </div>
-                    <div class="card-content">
-                        <div class="card-header-flex">
-                            <h3 class="card-heading">Tic Tac Toe</h3>
-                            <span class="category-tag">Strategy</span>
-                        </div>
-                        <p class="card-description">Classic strategy game for two players with win detection.</p>
-                        <div class="card-tech">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
-                        </div>
-                    </div>
-                </a>
+    <!-- Contributors Component Placeholder -->
+    <div id="contributors-placeholder"></div>
 
-                <!-- Todo List Project -->
-                <a href="./projects/todo-list/index.html" class="card" data-category="utility">
-                    <div class="card-cover todo-cover">
-                        <i class="ri-todo-line"></i>
-                    </div>
-                    <div class="card-content">
-                        <div class="card-header-flex">
-                            <h3 class="card-heading">Todo List</h3>
-                            <span class="category-tag">Utility</span>
-                        </div>
-                        <p class="card-description">Task management with add, edit, delete, and local storage.</p>
-                        <div class="card-tech">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
-                        </div>
-                    </div>
-                </a>
+    <!-- Footer Component Placeholder -->
+    <div id="footer-placeholder"></div>
 
-                <!-- Counter Project -->
-                <a href="./projects/counter/index.html" class="card" data-category="utility">
-                    <div class="card-cover counter-cover">
-                        <i class="ri-add-circle-line"></i>
-                    </div>
-                    <div class="card-content">
-                        <div class="card-header-flex">
-                            <h3 class="card-heading">Counter</h3>
-                            <span class="category-tag">Utility</span>
-                        </div>
-                        <p class="card-description">Simple counter with increment, decrement, and reset functionality.</p>
-                        <div class="card-tech">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
-                        </div>
-                    </div>
-                </a>
-
-                <!-- Quiz Game Project -->
-                <a href="./projects/quiz-game/index.html" class="card" data-category="puzzle">
-                    <div class="card-cover quiz-cover">
-                        <i class="ri-question-line"></i>
-                    </div>
-                    <div class="card-content">
-                        <div class="card-header-flex">
-                            <h3 class="card-heading">Quiz Game</h3>
-                            <span class="category-tag">Puzzle</span>
-                        </div>
-                        <p class="card-description">Multiple choice quiz with score tracking and timer.</p>
-                        <div class="card-tech">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
-                        </div>
-                    </div>
-                </a>
-                <!-- Digital Clock Project -->
-                <a href="./projects/digital-clock/index.html" class="card" data-category="utility">
-                    <div class="card-cover clock-cover">
-                        <i class="ri-time-line"></i>
-                    </div>
-                    <div class="card-content">
-                        <div class="card-header-flex">
-                            <h3 class="card-heading">Digital Clock</h3>
-                            <span class="category-tag">Utility</span>
-                        </div>
-                        <p class="card-description">Live digital clock displaying current time and date.</p>
-                        <div class="card-tech">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
-                        </div>
-                    </div>
-                </a>
-                <!-- Unit Converter Project -->
-                <a href="./projects/Unit-Converter/index.html" class="card" data-category="utility">
-                    <div class="card-cover unit-cover">
-                        <i class="ri-exchange-line"></i>
-                    </div>
-                    <div class="card-content">
-                        <div class="card-header-flex">
-                            <h3 class="card-heading">Unit Converter</h3>
-                            <span class="category-tag">Utility</span>
-                        </div>
-                        <p class="card-description">
-                            Convert length, weight, and temperature units with real-time results.
-                        </p>
-                        <div class="card-tech">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
-                        </div>
-                    </div>
-                </a>
-
-
-
-
-                 
-                <!-- Password Strength Checker Project -->
-                <a href="./projects/password-strength-checker/index.html" class="card" data-category="utility">
-                    <div class="card-cover password-cover">
-                        <i class="ri-lock-password-line"></i>
-                    </div>
-                    <div class="card-content">
-                        <div class="card-header-flex">
-                            <h3 class="card-heading">Password Strength Checker</h3>
-                            <span class="category-tag">Utility</span>
-                        </div>
-                        <p class="card-description">Real-time password strength checker with reveal/hide toggle and suggestions.</p>
-                        <div class="card-tech">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
-                        </div>
-                    </div>
-                </a>
-                <!-- Weather App Project -->
-                <a href="./projects/WeatherApp/index.html" class="card" data-category="utility">
-                    <div class="card-cover weather-cover">
-                        <i class="ri-sun-cloudy-line"></i>
-                    </div>
-                    <div class="card-content">
-                        <div class="card-header-flex">
-                            <h3 class="card-heading">Weather App</h3>
-                            <span class="category-tag">Utility</span>
-                        </div>
-                        <p class="card-description">Instant weather dashboard with dark glassmorphism UI and real-time API data.</p>
-                        <div class="card-tech">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JS</span>
-                            <span>API</span>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            
-            <!-- Pagination Controls -->
-            <div class="pagination-container" id="pagination-controls"></div>
-
-        <!-- How to Contribute Section -->
-        <div id="contribute" class="contribute-section">
-            <h3>How to Contribute</h3>
-            <p>Ready to showcase your project? Follow these simple steps:</p>
-            <div class="steps">
-                <div class="step-card">
-                    <div class="step-icon"><i class="ri-git-branch-line"></i></div>
-                    <h4>Fork & Clone</h4>
-                    <p>Fork the repository and clone it locally</p>
-                    <div class="terminal-window">
-                        <code>git clone https://github.com/your-username/OpenPlayground</code>
-                    </div>
-                </div>
-                <div class="step-card">
-                    <div class="step-icon"><i class="ri-folder-add-line"></i></div>
-                    <h4>Create Project</h4>
-                    <p>Add your project in the projects directory</p>
-                    <div class="terminal-window">
-                        <code>mkdir projects/my-project</code>
-                    </div>
-                </div>
-                <div class="step-card">
-                    <div class="step-icon"><i class="ri-layout-grid-line"></i></div>
-                    <h4>Add Card</h4>
-                    <p>Include your project card in index.html</p>
-                    <div class="terminal-window">
-                        <code>&lt;a href="./projects/my-project/index.html" class="card"&gt;</code>
-                    </div>
-                </div>
-                <div class="step-card">
-                    <div class="step-icon"><i class="ri-git-pull-request-line"></i></div>
-                    <h4>Submit PR</h4>
-                    <p>Commit changes and create a pull request</p>
-                    <div class="terminal-window">
-                        <code>git commit -m "Add: My Project"</code>
-                    </div>
-                </div>
-            </div>
-            <a href="https://github.com/YadavAkhileshh/OpenPlayground#readme" target="_blank" rel="noopener noreferrer" class="source-code-btn">
-                Read Full Guide
-            </a>
-        </div>
-    </section>
+    <!-- Chatbot Component Placeholder -->
+    <div id="chatbot-placeholder"></div>
 
     <!-- Scroll to Top Button -->
-    <button id="scrollToTopBtn" title="Go to top">
-        <i class="ri-arrow-up-double-fill"></i>
+    <button id="scrollToTopBtn" aria-label="Scroll to top">
+        <i class="ri-arrow-up-line"></i>
     </button>
 
+    <!-- Scripts -->
+    <script src="./js/components.js"></script>
     <script src="./js/app.js"></script>
+    <script src="./js/chatbot.js"></script>
+
+    <!-- Contributors Script -->
+    <script>
+        // GitHub API Configuration
+        const GITHUB_API_URL = 'https://api.github.com/repos/YadavAkhileshh/OpenPlayground/contributors';
+        const CONTRIBUTORS_TO_SHOW = 12;
+
+        // Fetch contributors from GitHub API
+        async function fetchContributors() {
+            const contributorsGrid = document.getElementById('contributors-grid');
+            const loadMoreBtn = document.getElementById('loadMoreContributors');
+            
+            if (!contributorsGrid) return;
+
+            try {
+                const response = await fetch(`${GITHUB_API_URL}?per_page=100`);
+
+                if (!response.ok) {
+                    throw new Error(`GitHub API error: ${response.status}`);
+                }
+
+                const contributors = await response.json();
+                displayContributors(contributors);
+            } catch (error) {
+                console.error('Error fetching contributors:', error);
+                showErrorState();
+            }
+        }
+
+        // Create contributor card HTML
+        function createContributorCard(contributor) {
+            const role = getRole(contributor);
+            
+            return `
+                <div class="contributor-card"
+                     data-role="${role}"
+                     data-name="${contributor.login.toLowerCase()}"
+                     data-date="${contributor.id}">
+                     
+                    <img src="${contributor.avatar_url}" class="contributor-avatar" loading="lazy" alt="${contributor.login}">
+                    <h4 class="contributor-name">${contributor.login}</h4>
+                    
+                    <span class="contributor-badge ${role}">
+                        ${role === 'developer' ? 'DEVELOPER' : 'CONTRIBUTOR'}
+                    </span>
+
+                    <a href="${contributor.html_url}" target="_blank" class="contributor-link">
+                        <i class="ri-github-fill"></i> Profile
+                    </a>
+                </div>
+            `;
+        }
+
+        function getRole(contributor) {
+            return contributor.contributions >= 50 ? "developer" : "contributor";
+        }
+
+        // Display contributors in the grid
+        function displayContributors(contributors) {
+            const contributorsGrid = document.getElementById('contributors-grid');
+            const loadMoreBtn = document.getElementById('loadMoreContributors');
+            
+            if (!contributorsGrid) return;
+
+            contributorsGrid.innerHTML = '';
+
+            if (contributors.length === 0) {
+                showNoContributors();
+                return;
+            }
+
+            // Filter out bots and limit to CONTRIBUTORS_TO_SHOW
+            const filteredContributors = contributors
+                .filter(contributor => !contributor.login.includes('[bot]'))
+                .slice(0, CONTRIBUTORS_TO_SHOW);
+
+            // Add contributor cards
+            filteredContributors.forEach((contributor, index) => {
+                const cardHTML = createContributorCard(contributor);
+                contributorsGrid.innerHTML += cardHTML;
+            });
+
+            // Show load more button if there are more contributors
+            const humanContributors = contributors.filter(c => !c.login.includes('[bot]'));
+            if (humanContributors.length > CONTRIBUTORS_TO_SHOW && loadMoreBtn) {
+                loadMoreBtn.style.display = 'inline-flex';
+                
+                loadMoreBtn.addEventListener('click', async () => {
+                    const allContributors = await fetch(`${GITHUB_API_URL}?per_page=100`).then(r => r.json());
+                    const humanContributors = allContributors.filter(c => !c.login.includes('[bot]'));
+
+                    contributorsGrid.innerHTML = '';
+                    humanContributors.forEach(contributor => {
+                        const cardHTML = createContributorCard(contributor);
+                        contributorsGrid.innerHTML += cardHTML;
+                    });
+
+                    loadMoreBtn.style.display = 'none';
+                });
+            }
+        }
+
+        // Show error state
+        function showErrorState() {
+            const contributorsGrid = document.getElementById('contributors-grid');
+            if (!contributorsGrid) return;
+            
+            contributorsGrid.innerHTML = `
+                <div class="contributors-error">
+                    <div class="error-icon">😕</div>
+                    <h3>Unable to load contributors</h3>
+                    <p>Please check your internet connection or try again later.</p>
+                </div>
+            `;
+        }
+
+        // Show no contributors state
+        function showNoContributors() {
+            const contributorsGrid = document.getElementById('contributors-grid');
+            if (!contributorsGrid) return;
+            
+            contributorsGrid.innerHTML = `
+                <div class="contributors-error">
+                    <div class="error-icon">👤</div>
+                    <h3>No contributors found</h3>
+                    <p>Be the first to contribute to this project!</p>
+                </div>
+            `;
+        }
+
+        // Initialize contributors when components are loaded
+        document.addEventListener('componentLoaded', (e) => {
+            if (e.detail.component === 'contributors') {
+                setTimeout(fetchContributors, 100);
+            }
+        });
+    </script>
+
+    <!-- Projects Management Script -->
+    <script>
+        // PROJECTS FILTERING AND PAGINATION SYSTEM
+        class ProjectManager {
+            constructor() {
+                this.cards = [];
+                this.filteredCards = [];
+                this.paginationContainer = null;
+                this.emptyState = null;
+                this.searchInput = null;
+                this.sortSelect = null;
+                this.filterButtons = [];
+
+                this.currentPage = 1;
+                this.cardsPerPage = 9;
+                this.currentFilter = "all";
+                this.currentSort = "default";
+                this.currentSearch = "";
+
+                // Wait for components to load
+                document.addEventListener('componentLoaded', (e) => {
+                    if (e.detail.component === 'projects') {
+                        setTimeout(() => this.init(), 100);
+                    }
+                });
+            }
+
+            init() {
+                this.cards = Array.from(document.querySelectorAll(".projects-container .card"));
+                this.paginationContainer = document.getElementById("pagination-controls");
+                this.emptyState = document.getElementById("empty-state");
+                this.searchInput = document.getElementById("project-search");
+                this.sortSelect = document.getElementById("project-sort");
+                this.filterButtons = document.querySelectorAll(".filter-btn");
+
+                if (this.cards.length === 0) {
+                    console.log('No project cards found, retrying...');
+                    setTimeout(() => this.init(), 500);
+                    return;
+                }
+
+                // Show all cards initially
+                this.cards.forEach(card => {
+                    card.style.display = "block";
+                    card.classList.remove("hidden");
+                });
+
+                this.addDateAttributes();
+                this.initEventListeners();
+                this.applyFilters();
+            }
+
+            addDateAttributes() {
+                const currentDate = new Date();
+                this.cards.forEach((card, index) => {
+                    if (!card.hasAttribute('data-date')) {
+                        const daysAgo = Math.floor(index / 3);
+                        const fakeDate = new Date(currentDate);
+                        fakeDate.setDate(currentDate.getDate() - daysAgo);
+                        card.setAttribute('data-date', fakeDate.toISOString());
+                    }
+                });
+            }
+
+            initEventListeners() {
+                if (this.searchInput) {
+                    this.searchInput.addEventListener("input", (e) => {
+                        this.currentSearch = e.target.value.toLowerCase();
+                        this.applyFilters();
+                        this.showPage(1);
+                    });
+                }
+
+                if (this.sortSelect) {
+                    this.sortSelect.addEventListener("change", (e) => {
+                        this.currentSort = e.target.value;
+                        this.applyFilters();
+                        this.showPage(1);
+                    });
+                }
+
+                this.filterButtons.forEach(btn => {
+                    btn.addEventListener("click", () => {
+                        this.filterButtons.forEach(b => b.classList.remove("active"));
+                        btn.classList.add("active");
+                        this.currentFilter = btn.dataset.filter;
+                        this.applyFilters();
+                        this.showPage(1);
+                    });
+                });
+
+                window.addEventListener("resize", () => {
+                    this.updatePagination();
+                });
+            }
+
+            applyFilters() {
+                let filtered = [...this.cards];
+
+                // Apply search filter
+                if (this.currentSearch) {
+                    filtered = filtered.filter(card => {
+                        const title = card.querySelector(".card-heading")?.textContent.toLowerCase() || '';
+                        const description = card.querySelector(".card-description")?.textContent.toLowerCase() || '';
+                        const tech = card.querySelector(".card-tech")?.textContent.toLowerCase() || '';
+                        const category = card.dataset.category?.toLowerCase() || '';
+
+                        return title.includes(this.currentSearch) ||
+                            description.includes(this.currentSearch) ||
+                            tech.includes(this.currentSearch) ||
+                            category.includes(this.currentSearch);
+                    });
+                }
+
+                // Apply category filter
+                if (this.currentFilter !== "all") {
+                    filtered = filtered.filter(card =>
+                        card.dataset.category === this.currentFilter
+                    );
+                }
+
+                // Apply sorting
+                filtered = this.sortCards(filtered);
+
+                this.filteredCards = filtered;
+                this.showAllCards();
+                this.updateEmptyState();
+            }
+
+            sortCards(cards) {
+                const sorted = [...cards];
+
+                switch (this.currentSort) {
+                    case "az":
+                        sorted.sort((a, b) => {
+                            const titleA = a.querySelector(".card-heading")?.textContent.toLowerCase() || '';
+                            const titleB = b.querySelector(".card-heading")?.textContent.toLowerCase() || '';
+                            return titleA.localeCompare(titleB);
+                        });
+                        break;
+
+                    case "za":
+                        sorted.sort((a, b) => {
+                            const titleA = a.querySelector(".card-heading")?.textContent.toLowerCase() || '';
+                            const titleB = b.querySelector(".card-heading")?.textContent.toLowerCase() || '';
+                            return titleB.localeCompare(titleA);
+                        });
+                        break;
+
+                    case "newest":
+                        sorted.sort((a, b) => {
+                            const dateA = new Date(a.getAttribute("data-date"));
+                            const dateB = new Date(b.getAttribute("data-date"));
+                            return dateB - dateA;
+                        });
+                        break;
+                }
+
+                return sorted;
+            }
+
+            showAllCards() {
+                // Show all filtered cards without pagination
+                this.cards.forEach(card => {
+                    card.style.display = "none";
+                });
+
+                this.filteredCards.forEach(card => {
+                    card.style.display = "block";
+                });
+            }
+
+            updatePagination() {
+                if (!this.paginationContainer) return;
+                
+                this.paginationContainer.innerHTML = "";
+                const totalPages = Math.ceil(this.filteredCards.length / this.cardsPerPage);
+
+                if (totalPages > 1) {
+                    // Previous button
+                    if (this.currentPage > 1) {
+                        const prevBtn = document.createElement("button");
+                        prevBtn.innerHTML = "&laquo;";
+                        prevBtn.addEventListener("click", () => this.showPage(this.currentPage - 1));
+                        this.paginationContainer.appendChild(prevBtn);
+                    }
+
+                    // Page buttons
+                    const maxVisiblePages = 5;
+                    let startPage = Math.max(1, this.currentPage - Math.floor(maxVisiblePages / 2));
+                    let endPage = Math.min(totalPages, startPage + maxVisiblePages - 1);
+
+                    if (endPage - startPage + 1 < maxVisiblePages) {
+                        startPage = Math.max(1, endPage - maxVisiblePages + 1);
+                    }
+
+                    for (let i = startPage; i <= endPage; i++) {
+                        const btn = document.createElement("button");
+                        btn.textContent = i;
+                        btn.classList.toggle("active", i === this.currentPage);
+                        btn.addEventListener("click", () => this.showPage(i));
+                        this.paginationContainer.appendChild(btn);
+                    }
+
+                    // Next button
+                    if (this.currentPage < totalPages) {
+                        const nextBtn = document.createElement("button");
+                        nextBtn.innerHTML = "&raquo;";
+                        nextBtn.addEventListener("click", () => this.showPage(this.currentPage + 1));
+                        this.paginationContainer.appendChild(nextBtn);
+                    }
+
+                    this.paginationContainer.style.display = "flex";
+                } else {
+                    this.paginationContainer.style.display = "none";
+                }
+            }
+
+            updateActiveButton() {
+                if (!this.paginationContainer) return;
+                
+                const buttons = this.paginationContainer.querySelectorAll("button");
+                buttons.forEach(btn => {
+                    if (btn.innerHTML !== "&laquo;" && btn.innerHTML !== "&raquo;") {
+                        const pageNum = parseInt(btn.textContent);
+                        btn.classList.toggle("active", pageNum === this.currentPage);
+                    }
+                });
+            }
+
+            updateEmptyState() {
+                if (!this.emptyState) return;
+                
+                if (this.filteredCards.length === 0) {
+                    this.emptyState.style.display = "block";
+                } else {
+                    this.emptyState.style.display = "none";
+                }
+            }
+
+            scrollToProjects() {
+                const projectsSection = document.getElementById("projects");
+                if (projectsSection && this.currentPage > 1) {
+                    const navbarHeight = 75;
+                    const targetPosition = projectsSection.offsetTop - navbarHeight;
+
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: "smooth"
+                    });
+                }
+            }
+        }
+
+        // Initialize when DOM is loaded
+        document.addEventListener("DOMContentLoaded", function () {
+            window.ProjectManager = new ProjectManager();
+        });
+    </script>
+
+    <!-- Force scroll to top on page load -->
+    <script>
+        window.addEventListener('load', function () {
+            window.scrollTo(0, 0);
+            setTimeout(() => window.scrollTo(0, 0), 100);
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            window.scrollTo(0, 0);
+        });
+    </script>
 </body>
 
 </html>

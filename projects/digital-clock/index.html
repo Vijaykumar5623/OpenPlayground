@@ -1,42 +1,16 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Clock</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pixel Digital Clock</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-  <div class="bg-gradient"></div>
-
-  <div class="container glass">
-    <h2>Password Strength Checker</h2>
-
-    <input
-      type="password"
-      id="password"
-      placeholder="Enter your password"
-    />
-
-    <div class="strength-bar">
-      <div id="strength-indicator"></div>
-    </div>
-
-    <p id="strength-text"></p>
-
-    <ul class="rules">
-      <li id="length">✔ Minimum 8 characters</li>
-      <li id="uppercase">✔ At least one uppercase letter</li>
-      <li id="lowercase">✔ At least one lowercase letter</li>
-      <li id="number">✔ At least one number</li>
-      <li id="special">✔ At least one special character</li>
-    </ul>
+  <div class="clock-wrapper">
+    <div class="clock" id="clock"></div>
+    <div class="date" id="date"></div>
   </div>
-
   <script src="script.js"></script>
 </body>
-
-
 </html>
