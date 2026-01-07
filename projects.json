@@ -1013,6 +1013,16 @@
   "icon": "ri-brush-line",
   "coverClass": "drawing-canvas-cover"
 }
+{
+  "title": "Online Food Delivery App",
+  "category": "utility",
+  "description": "Responsive food ordering UI with cart functionality",
+  "tech": ["HTML", "CSS", "JS"],
+  "link": "./projects/online-food-delivery/index.html",
+  "icon": "ri-restaurant-line",
+  "coverClass": "online-food-cover"
+}
+
 
 
 ]

@@ -710,3 +710,9 @@ main {
     font-size: 1.2rem;
     margin-bottom: 1rem;
 }
+.online-food-cover {
+  background: linear-gradient(135deg, #FF6B35, #F7931E);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
