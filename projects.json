@@ -1108,6 +1108,7 @@
     "icon": "ri-user-line",
     "coverStyle": "background: linear-gradient(135deg, #f3e8ff 0%, #e9d5ff 100%); color: #7c2d12;"
   },
+<<<<<<<<< Temporary merge branch 1
 
   {
     "title": "Truth or Dare",
@@ -1484,7 +1485,8 @@
     "link": "./projects/OS-ReadinessChecker/index.html",
     "icon": "ri-direction-line",
     "coverStyle": "background: linear-gradient(135deg, #020617 0%, #22d3ee 100%); color:#ecfeff;"
-  },
+  }
+=========
   {
   "title": "GitHub User Finder",
   "category": "utility",
