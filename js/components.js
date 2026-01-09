@@ -2,7 +2,7 @@
 // Component Loader for OpenPlayground
 // Dynamically loads HTML components
 // ===============================
- 
+
 class ComponentLoader {
     constructor() {
         this.components = {
@@ -156,9 +156,6 @@ class ComponentLoader {
         // Initialize scroll to top
         this.initializeScrollToTop();
 
-        // Initialize chatbot
-        this.initializeChatbot();
-
         // Initialize smooth scrolling
         this.initializeSmoothScrolling();
 
@@ -269,30 +266,30 @@ class ComponentLoader {
     //     const chatbot = document.getElementById('chatbot');
     //     const chatInput = document.getElementById('chatInput');
     //     const chatMessages = document.getElementById('chatMessages');
-        
+
     //     if (chatbotBtn && chatbot) {
     //         // Toggle chatbot
     //         window.toggleChatbot = () => {
     //             const isVisible = chatbot.style.display === 'flex';
     //             chatbot.style.display = isVisible ? 'none' : 'flex';
     //         };
-            
+
     //         // Send message
     //         window.sendChat = () => {
     //             if (!chatInput || !chatMessages) return;
-                
+
     //             const message = chatInput.value.trim();
     //             if (!message) return;
-                
+
     //             // Add user message
     //             const userMsg = document.createElement('div');
     //             userMsg.className = 'user-msg';
     //             userMsg.textContent = message;
     //             chatMessages.appendChild(userMsg);
-                
+
     //             chatInput.value = '';
     //             chatMessages.scrollTop = chatMessages.scrollHeight;
-                
+
     //             // Bot response
     //             setTimeout(() => {
     //                 const botMsg = document.createElement('div');
@@ -302,7 +299,7 @@ class ComponentLoader {
     //                 chatMessages.scrollTop = chatMessages.scrollHeight;
     //             }, 500);
     //         };
-            
+
     //         // Enter key support
     //         if (chatInput) {
     //             chatInput.addEventListener('keypress', (e) => {
@@ -316,7 +313,7 @@ class ComponentLoader {
 
     // getBotResponse(message) {
     //     const msg = message.toLowerCase();
-        
+
     //     if (msg.includes('project')) {
     //         return '📁 You can explore projects in the Projects section. Use filters to find specific types!';
     //     } else if (msg.includes('contribute')) {
