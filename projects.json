@@ -2548,6 +2548,18 @@
   "link": "./projects/tab-organizer/index.html",
   "icon": "ri-window-line",
   "coverStyle": "background: linear-gradient(135deg, #4b6cb7 0%, #182848 100%); color: white;"
+},
+{
+  "title": "Tab Focus Timer",
+  "category": "productivity",
+  "description": "Track time spent on each browser tab and display productivity stats.",
+  "tech": [
+    "HTML",
+    "CSS",
+    "JavaScript"
+  ],
+  "link": "./projects/tab-focus-timer/index.html",
+  "icon": "ri-timer-line",
+  "coverStyle": "background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%); color: white;"
 }
-
 ]
