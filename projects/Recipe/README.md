@@ -7,12 +7,15 @@ You can add an image either by URL or by uploading a local file:
 1. Click “Add Recipe”.
 2. Provide a Recipe Title, Ingredients, Steps, and Time.
 3. Image options:
-  - Paste an Image URL (supports JPEG, PNG, WebP, SVG). Note: Unsplash typically serves JPEG.
-  - Or click “Upload Image” to choose a local file (max 2MB). You’ll see a live preview.
+
+- Paste an Image URL (supports JPEG, PNG, WebP, SVG). Note: Unsplash typically serves JPEG.
+- Or click “Upload Image” to choose a local file (max 2MB). You’ll see a live preview.
+
 4. If your recipe needs transparency (icons, cutouts), tick “This recipe requires PNG format”. The app will warn you if the source is likely non-PNG.
 5. Save Recipe. The uploaded image (if provided) is preferred over the URL.
 
 PNG vs JPEG policy:
+
 - Use PNG (or SVG) when you need transparency/alpha.
 - External sources like Unsplash serve JPEG regardless of the URL extension.
 - The app falls back to a local placeholder when loading fails.
