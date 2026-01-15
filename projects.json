@@ -1,4 +1,35 @@
 [
+  {
+    "title": "Pixel Art Studio",
+    "category": "productivity",
+    "difficulty": "Intermediate",
+    "description": "A browser-based editor for creating 8-bit style pixel art with customizable grids, color palettes, drawing tools, and export functionality.",
+    "tech": [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "Canvas API",
+      "Grid Layout",
+      "LocalStorage"
+    ],
+    "link": "./projects/PixelArtStudio/index.html",
+    "icon": "ri-brush-line",
+    "coverStyle": "background: linear-gradient(135deg, #8b5cf6 0%, #a78bfa 50%, #c4b5fd 100%); color: white;"
+  },
+  {
+  "title": "Random Mini Challenge Generator",
+  "category": "productivity",
+  "description": "Generate small, achievable challenges to encourage healthy breaks with friendly UI and progress tracking.",
+  "tech": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "LocalStorage"
+  ],
+  "link": "./projects/ChallengeGenerator/index.html",
+  "icon": "ri-gamepad-line",
+  "coverStyle": "background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); color: #5a6782;"
+},
     {
     "title": "Sphere of Contributors",
     "category": "utility",
@@ -42,6 +73,20 @@
   "coverStyle": "background: linear-gradient(135deg, #8a7fcc 0%, #ff8ba7 100%); color: white;"
 }
 ,
+    {
+  "title": "Minimal Countdown",
+  "category": "utility",
+  "difficulty": "Intermediate",
+  "description": "A visually minimal countdown timer that represents time using animated concentric circles and progress rings for hours, minutes, and seconds. Features smooth transitions, start/pause/reset controls, responsive design, and an intuitive visual time experience.",
+  "tech": [
+    "HTML",
+    "CSS",
+    "JavaScript"
+  ],
+  "link": "./projects/MinimalCountdown/index.html",
+  "icon": "ri-timer-line",
+  "coverStyle": "background: linear-gradient(135deg, #4a6fa5 0%, #8fb8e6 100%); color: white;"
+},
   {
     "title": "365 Days Progress Tracker",
     "category": "utility",
@@ -302,6 +347,19 @@
     "coverStyle": "background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); color: white;"
   },
   {
+    "title": "Desert Horse Run Game",
+    "category": "game",
+    "description": "A simple horse run game where the player controls a horse to jump over obstacles and score points.",
+    "tech": [
+      "HTML",
+      "CSS",
+      "JS"
+    ],
+    "link": "./projects/horse-run-game/index.html",
+    "icon": "ri-horse-line",
+    "coverStyle": "background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); color: white;"
+  },
+  {
     "title": "Interactive Road Safety Quiz",
     "category": "utility",
     "description": "An engaging quiz platform testing knowledge of road safety rules, traffic signs, and safe driving practices with multiple difficulty levels and instant feedback.",
@@ -327,6 +385,21 @@
   "icon": "ri-gamepad-line",
   "coverClass": "flappy-bird-cover"
   },
+
+  {
+    "title": "Space Invaders",
+    "category": "game",
+    "description": "A classic Space Invaders–style arcade shooter featuring responsive controls, enemy waves, collision detection, scoring system, and increasing difficulty, built with vanilla web technologies.",
+    "tech": [
+      "HTML",
+      "CSS",
+      "JS"
+    ],
+    "link": "./projects/space-invaders/index.html",
+    "icon": "ri-rocket-line",
+    "coverClass": "space-invaders-cover"
+  },
+
   {
     "title": "Image Preview Uploader",
     "category": "utility",
@@ -339,6 +412,19 @@
     "link": "./projects/file-upload-preview/index.html",
     "icon": "ri-image-add-line",
     "coverStyle": "background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%); color: white;"
+  },
+   {
+  "title": "Basket Ball Game ",
+  "category": "game",
+  "description": "A 3D backet ball shooting game with score tracking and dynamic hoop movement, built using Three.js for immersive graphics and smooth gameplay.",
+  "tech": [
+    "HTML",
+    "CSS",
+    "JS"
+  ],
+  "link": "./projects/basket-ball-game/index.html",
+  "icon": "ri-basketball-line",
+  "coverClass": "background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%); color: white;"
   },
   {
     "title": "Stack vs Queue Visualizer",
@@ -3146,4 +3232,86 @@
   "icon": "ri-todo-fill",
   "coverStyle": "background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;"
 }
+    "title": "Chess vs Computer",
+    "category": "game",
+    "description": "Play classic chess against a strong computer with full rules and clean UI.",
+    "tech": ["HTML", "CSS", "JavaScript"],
+    "link": "./projects/chess-vs-computer/index.html",
+    "icon": "ri-chess-line",
+    "coverStyle": "background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); color: #f5f5f5;"
+  },
+  {
+    "title": "Idea of the Day",
+    "category": "productivity",
+    "description": "A minimal daily inspiration web app that presents one curated idea per day, focused on projects, habits, and learning. Designed for simplicity, consistency, and distraction-free daily engagement.",
+    "tech": ["HTML", "CSS", "JavaScript"],
+    "link": "https://yugenjr.github.io/IdeaOfTheDay/",
+    "icon": "ri-lightbulb-flash-line",
+    "coverStyle": "background: linear-gradient(135deg, #0f172a 0%, #020617 100%); color: #e5e7eb;"
+  },
+  {
+    "title": "Daily Gratitude Note",
+    "category": "utility",
+    "description": "A warm and simple daily gratitude app to record things you are thankful for. Features streak tracking, date navigation, and motivational quotes.",
+    "tech": ["HTML", "CSS", "JavaScript", "LocalStorage"],
+    "link": "./projects/DailyGratitudeApp/index.html",
+    "icon": "ri-heart-pulse-line",
+    "coverStyle": "background: linear-gradient(135deg, #FF8066 0%, #FFB7A8 100%); color: white;"
+  },
+  {
+    "title": "Color Mood Board Generator",
+    "category": "utility",
+    "description": "A calm, modern web utility that generates visually harmonious color palettes based on mood. Users can switch between warm, pastel, dark, or random palettes, regenerate combinations, copy hex codes, and export palettes as images. Built with a strong focus on visual balance and simple interactivity.",
+    "tech": ["HTML", "CSS", "JavaScript"],
+    "link": "https://yugenjr.github.io/ColorMoodBoard/",
+    "icon": "ri-palette-line",
+    "coverStyle": "background: linear-gradient(135deg, #fef3c7 0%, #fde68a 40%, #f59e0b 100%); color: #1f2937;"
+  },
+  {
+    "title": "One-Click Relax Button",
+    "category": "utility",
+    "difficulty": "Intermediate",
+    "description": "A calming, interactive relaxation experience with guided breathing cues, smooth animations, subtle motion, and mindful visual feedback. Designed to help users pause, breathe, and reset with a single click.",
+    "tech": ["HTML", "CSS", "JavaScript"],
+    "link": "./projects/one-click-relax-button/index.html",
+    "icon": "ri-heart-pulse-line",
+    "coverStyle": "background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 50%, #d1fae5 100%); color: #064e3b;"
+  },
+  {
+    "title": "Neon Snake Arena",
+    "category": "game",
+    "description": "A neon-styled Snake game with smooth motion, power-ups, and arena challenges.",
+    "tech": ["HTML", "CSS", "JS"],
+    "link": "./projects/Neon_Snake_Arena/index.html",
+    "icon": "ri-gamepad-line",
+    "coverStyle": "background: linear-gradient(135deg, #020617 0%, #22d3ee 100%); color:#ecfeff;"
+  },
+  {
+    "title": "Portal Flip Puzzle",
+    "category": "game",
+    "description": "Logic-based puzzle where portals flip gravity and orientation to reach the exit.",
+    "tech": ["HTML", "CSS", "JS"],
+    "link": "./projects/Portal_Flip_Puzzle/index.html",
+    "icon": "ri-exchange-box-line",
+    "coverStyle": "background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); color:#e5e7eb;"
+  },
+  {
+    "title": "Reflex Pulse",
+    "category": "game",
+    "difficulty": "Intermediate",
+    "description": "A one-button reflex game where players must tap at the perfect moment as an expanding pulse aligns with a target ring. Focused on timing, precision, and smooth visual feedback.",
+    "tech": ["HTML", "CSS", "JavaScript"],
+    "link": "./projects/reflex-pulse/index.html",
+    "icon": "ri-focus-3-line",
+    "coverStyle": "background: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%); color: #e5e7eb;"
+  },
+  {
+    "title": "FlowLogic",
+    "category": "Educational",
+    "description": "A visual logic builder that allows users to create and connect logic flows using interactive blocks.",
+    "tech": ["HTML", "CSS", "JavaScript"],
+    "link": "./projects/flowlogic/index.html",
+    "icon": "ri-flow-chart",
+    "coverStyle": "background: linear-gradient(135deg, #fdf2f8 0%, #fbcfe8 50%, #fae8ff 100%); color: #581c87;"
+  }
 ]
