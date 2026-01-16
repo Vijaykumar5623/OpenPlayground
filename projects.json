@@ -377,9 +377,6 @@
     "coverStyle": "background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); color: white;"
   },
    {
-    "title": "Ultimate Ride ",
-    "category": "game",
-    "description": "A fast-paced racing game with neon visuals and challenging tracks.",
     "title": "Stick With Hero Game",
     "category": "game",
     "description": "A simple and engaging stick hero game where players control a character to build sticks and cross platforms while avoiding obstacles.",
@@ -390,8 +387,6 @@
     ],
     "link": "./projects/ultimate-ride/index.html",
     "icon": "ri-car-line",
-    "link": "./projects/stick-with-hero/index.html",
-    "icon": "ri-walk-line",
     "coverStyle": "background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); color: white;"
   },
   {
@@ -405,6 +400,19 @@
     ],
     "link": "./projects/quiz-game/index.html",
     "icon": "ri-question-line",
+    "coverClass": "quiz-cover"
+  },
+  {
+    "title": "Terminal typer",
+    "category": "puzzle",
+    "description": "MCQ quiz with timer.",
+    "tech": [
+      "HTML",
+      "CSS",
+      "JS"
+    ],
+    "link": "./projects/terminal-typer/index.html",
+    "icon": "ri-terminal-line",
     "coverClass": "quiz-cover"
   },
   {
