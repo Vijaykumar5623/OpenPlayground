@@ -1,5 +1,71 @@
 [
   {
+    "title": "Live Webcam ASCII Art Converter",
+    "category": "experimental",
+    "difficulty": "Intermediate",
+    "description": "A real-time video processing application that transforms webcam feeds into live ASCII character animations using browser-based computer vision and image processing techniques.",
+    "tech": [
+      "HTML5",
+      "CSS3",
+      "JavaScript"
+    ],
+    "link": "./projects/LiveWebcamToASCII/index.html",
+    "icon": "ri-webcam-line",
+    "coverStyle": "background: linear-gradient(135deg, #0a0a0f 0%, #151520 50%, #1e1e2d 100%); color: #00ff41;"
+  },
+  {
+    "title": "SubTrack - Subscription Finance Dashboard",
+    "category": "finance",
+    "difficulty": "Intermediate",
+    "description": "A personal finance dashboard dedicated to tracking the 'subscription economy' life. It visualizes all recurring payments in one place, helping users understand their true monthly and yearly burn rate with visual renewal timelines, cost analysis charts, and direct cancellation links.",
+    "tech": [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "ES6 Classes",
+      "LocalStorage API"
+    ],
+    "link": "./projects/SubscriptionManager/index.html",
+    "icon": "ri-pie-chart-line",
+    "coverStyle": "background: linear-gradient(135deg, #4361ee 0%, #3a0ca3 50%, #f72585 100%); color: white;"
+  },
+  {
+    "title": "World Meeting Planner",
+    "category": "utility",
+    "difficulty": "Intermediate",
+    "description": "A timezone coordination tool that helps remote teams find overlapping meeting times with visual timeline visualization, golden hour detection, and automated invite generation for global teams.",
+    "tech": [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "ES6 Classes",
+      "LocalStorage API",
+      "Canvas API",
+      "CSS Grid & Flexbox",
+      "Responsive Design"
+    ],
+    "link": "./projects/WorldMeetingPlanner/index.html",
+    "icon": "ri-globe-line",
+    "coverStyle": "background: linear-gradient(135deg, #3a86ff 0%, #8338ec 50%, #ffbe0b 100%); color: white;"
+  },
+  {
+    "title": "StegoSafe Pro",
+    "category": "productivity",
+    "difficulty": "Intermediate",
+    "description": "A secure steganography utility that hides AES-256 encrypted text messages inside image files using Least Significant Bit (LSB) manipulation, ensuring data privacy with zero visual distortion.",
+    "tech": [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "Canvas API",
+      "Web Crypto API",
+      "Bitwise Operations"
+    ],
+    "link": "./projects/SteganographyEncoder/index.html",
+    "icon": "ri-shield-key-line",
+    "coverStyle": "background: linear-gradient(135deg, #2563eb 0%, #4f46e5 50%, #818cf8 100%); color: white;"
+  },
+  {
     "title": "Random Learning Topic Picker",
     "category": "utility",
     "difficulty": "Beginner",
