@@ -1317,6 +1317,11 @@
       "folder": "WebKernel",
       "path": "./projects/webkernel/project.json",
       "link": "./projects/webkernel/index.html"
+    },
+    {
+      "folder": "Flownet",
+      "path": "./projects/flownet/project.json",
+      "link": "./projects/flownet/index.html"
     }
 
   ]
