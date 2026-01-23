@@ -1497,6 +1497,11 @@
       "link": "./projects/Time-Perception-Experiment/index.html"
     },
     {
+      "folder": "Time-Perception-Simulator",
+      "path": "./projects/Time-Perception-Simulator/project.json",
+      "link": "./projects/Time-Perception-Simulator/index.html"
+    },
+    {
       "folder": "time-zone-converter",
       "path": "./projects/time-zone-converter/project.json",
       "link": "./projects/time-zone-converter/index.html"
