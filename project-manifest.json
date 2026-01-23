@@ -19,6 +19,11 @@
       "link": "./projects/AttentionGarden/index.html"
     },
     {
+      "folder": "MinimalSurvival",
+      "path": "./projects/MinimalSurvival/project.json",
+      "link": "./projects/MinimalSurvival/index.html"
+    },
+    {
       "folder": "365Days",
       "path": "./projects/365Days/project.json",
       "link": "./projects/365Days/index.html"
