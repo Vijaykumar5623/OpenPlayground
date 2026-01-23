@@ -24,9 +24,14 @@
       "link": "./projects/365Days/index.html"
     },
     {
+      "folder": "DigitalEnergyMeter",
+      "path": "./projects/DigitalEnergyMeter/project.json",
+      "link": "./projects/DigitalEnergyMeter/index.html"
+    },
+    {
       "folder": "DigitalPresenceMirror",
       "path": "./projects/DigitalPresenceMirror/project.json",
-      "link": "./projects/DigitalPresenceMirror/index.html"
+      "link": "./projects/DigitalPresenceMirror/index.html",
       "folder": "ThoughtSpeedAnalyzer",
       "path": "./projects/ThoughtSpeedAnalyzer/project.json",
       "link": "./projects/ThoughtSpeedAnalyzer/index.html"
