@@ -1,0 +1,209 @@
+:root {
+    --bg-dark: #1e1e1e;
+    --bg-panel: #252526;
+    --border: #333;
+    --text-main: #d4d4d4;
+    --text-dim: #858585;
+    
+    /* Syntax Colors */
+    --color-key: #9cdcfe;
+    --color-string: #ce9178;
+    --color-number: #b5cea8;
+    --color-bool: #569cd6;
+    --color-null: #569cd6;
+    
+    --accent: #007acc;
+    --font-code: 'JetBrains Mono', monospace;
+    --font-ui: 'Inter', sans-serif;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    font-family: var(--font-ui);
+    height: 100vh;
+    overflow: hidden;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+header {
+    height: 50px;
+    background: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    border-bottom: 1px solid #444;
+}
+
+.brand {
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+}
+
+.brand i { color: var(--accent); }
+
+.controls { display: flex; gap: 10px; }
+
+.btn {
+    padding: 6px 14px;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    font-family: var(--font-ui);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: background 0.2s;
+}
+
+.btn.primary { background: var(--accent); color: white; }
+.btn.primary:hover { background: #0062a3; }
+
+.btn.secondary { background: #444; color: white; }
+.btn.secondary:hover { background: #555; }
+
+/* Workspace */
+.workspace {
+    flex: 1;
+    display: flex;
+    overflow: hidden;
+}
+
+section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid var(--border);
+    min-width: 0; /* Fix flex overflow */
+}
+
+.pane-header {
+    background: var(--bg-panel);
+    padding: 8px 15px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Status Indicator */
+.status-indicator {
+    font-size: 0.75rem;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+.status-indicator.valid { color: #81c784; background: rgba(129, 199, 132, 0.1); }
+.status-indicator.error { color: #e57373; background: rgba(229, 115, 115, 0.1); }
+
+/* Editor */
+.editor-wrapper { flex: 1; position: relative; }
+
+textarea {
+    width: 100%; height: 100%;
+    background: var(--bg-dark);
+    color: var(--text-main);
+    border: none;
+    resize: none;
+    padding: 15px;
+    font-family: var(--font-code);
+    font-size: 0.9rem;
+    outline: none;
+    line-height: 1.5;
+}
+
+/* Tree View */
+.tree-container {
+    flex: 1;
+    padding: 15px;
+    overflow: auto;
+    font-family: var(--font-code);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.placeholder-text {
+    color: var(--text-dim);
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Search Box */
+.search-box {
+    display: flex;
+    align-items: center;
+    background: #3c3c3c;
+    border-radius: 4px;
+    padding: 2px 8px;
+    width: 200px;
+}
+
+.search-box i { color: var(--text-dim); font-size: 0.8rem; }
+
+.search-box input {
+    background: transparent;
+    border: none;
+    color: white;
+    margin-left: 5px;
+    width: 100%;
+    font-size: 0.8rem;
+    outline: none;
+}
+
+/* Tree Syntax */
+.tree-node {
+    margin-left: 20px;
+    display: none; /* Collapsed by default */
+}
+
+.tree-node.expanded { display: block; }
+
+.tree-row {
+    display: flex;
+    align-items: flex-start;
+    cursor: default;
+}
+
+.toggler {
+    width: 15px;
+    display: inline-block;
+    cursor: pointer;
+    color: var(--text-dim);
+    font-size: 0.7rem;
+    margin-top: 4px;
+    transition: transform 0.2s;
+}
+
+.toggler.open { transform: rotate(90deg); }
+.toggler.hidden { visibility: hidden; }
+
+.key { color: var(--color-key); margin-right: 5px; }
+.sep { color: var(--text-main); margin-right: 5px; }
+
+/* Values */
+.val-string { color: var(--color-string); }
+.val-number { color: var(--color-number); }
+.val-bool { color: var(--color-bool); }
+.val-null { color: var(--color-null); }
+
+/* Brackets */
+.bracket { color: #ffd700; font-weight: bold; }
+
+/* Highlighting */
+.highlight {
+    background-color: rgba(255, 255, 0, 0.2);
+    border-radius: 2px;
+}   

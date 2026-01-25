@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON-Tree | Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <div class="brand">
+                <i class="fas fa-project-diagram"></i> JSON-Tree
+            </div>
+            <div class="controls">
+                <button id="btn-format" class="btn secondary">
+                    <i class="fas fa-align-left"></i> Format
+                </button>
+                <button id="btn-visualize" class="btn primary">
+                    <i class="fas fa-play"></i> Visualize
+                </button>
+            </div>
+        </header>
+
+        <main class="workspace">
+            <section class="input-pane">
+                <div class="pane-header">
+                    <span>Raw JSON</span>
+                    <span class="status-indicator valid" id="status-indicator">Valid</span>
+                </div>
+                <div class="editor-wrapper">
+                    <textarea id="json-input" placeholder='Paste your JSON here...
+{
+  "example": true,
+  "nested": { "a": 1 }
+}' spellcheck="false"></textarea>
+                </div>
+            </section>
+
+            <section class="output-pane">
+                <div class="pane-header">
+                    <span>Tree View</span>
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="search-input" placeholder="Find key or value...">
+                    </div>
+                </div>
+                <div class="tree-container" id="tree-container">
+                    <div class="placeholder-text">
+                        Click "Visualize" to render the tree.
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
