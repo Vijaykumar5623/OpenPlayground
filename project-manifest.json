@@ -1000,6 +1000,11 @@
       "link": "./projects/Mind-rooms/index.html"
     },
     {
+      "folder": "ballsort",
+      "path": "./projects/ballsort/project.json",
+      "link": "./projects/ballsort/index.html"
+    },
+    {
       "folder": "minesweeper",
       "path": "./projects/minesweeper/project.json",
       "link": "./projects/minesweeper/index.html"
