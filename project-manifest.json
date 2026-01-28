@@ -1972,6 +1972,9 @@
       "folder": "EvoRefresh",
       "path": "./projects/evorefresh/project.json",
       "link": "./projects/evorefresh/index.html"
+      "folder": "Flownet",
+      "path": "./projects/flownet/project.json",
+      "link": "./projects/flownet/index.html"
     },
     {
       "folder": "Flownet",
@@ -1989,6 +1992,9 @@
       "link": "./projects/Digital Mood Landscape/index.html"
     },
     {
+      "folder": "ScribeWord",
+      "path": "./projects/ScribeWord/project.json",
+      "link": "./projects/ScribeWord/index.html"
       "folder": "Harmonicajs",
       "path": "./projects/harmonicjs/project.json",
       "link": "./projects/harmonicjs/index.html"
