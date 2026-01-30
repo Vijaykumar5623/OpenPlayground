@@ -1,7 +1,7 @@
 {
   "version": "2.1",
   "generated": "2026-01-26T07:15:36.523Z",
-  "count": 385,
+  "count": 386,
   "projects": [
     {
       "folder": "15 Sliding Puzzle",
@@ -2022,6 +2022,11 @@
       "folder": "math-equation-builder",
       "path": "./projects/math-equation-builder/project.json",
       "link": "./projects/math-equation-builder/index.html"
+    },
+    {
+      "folder": "geography-capital-matcher",
+      "path": "./projects/geography-capital-matcher/project.json",
+      "link": "./projects/geography-capital-matcher/index.html"
     }
   ]
 }
