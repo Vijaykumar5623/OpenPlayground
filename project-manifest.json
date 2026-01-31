@@ -1929,6 +1929,11 @@
       "link": "./projects/CSV-Cleaner/index.html"
     },
     {
+      "folder": "SEOMETA",
+      "path": "./projects/SEOMETA/project.json",
+      "link": "./projects/SEOMETA/index.html"
+    },
+    {
       "folder": "baseEncoder",
       "path": "./projects/baseEncoder/project.json",
       "link": "./projects/baseEncoder/index.html"
