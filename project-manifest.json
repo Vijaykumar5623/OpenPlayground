@@ -1,7 +1,7 @@
 {
   "version": "2.1",
   "generated": "2026-01-24T16:38:07.796Z",
-  "count": 362,
+  "count": 363,
   "projects": [
     {
       "folder": "15 Sliding Puzzle",
@@ -1877,6 +1877,11 @@
       "folder": "virtuf",
       "path": "./projects/virtuf/project.json",
       "link": "./projects/virtuf/index.html"
+    },
+    {
+      "folder": "virtual-pet-care-simulator",
+      "path": "./projects/virtual-pet-care-simulator/project.json",
+      "link": "./projects/virtual-pet-care-simulator/index.html"
     },
     {
       "folder": "Visual_Rhythm_Game",
